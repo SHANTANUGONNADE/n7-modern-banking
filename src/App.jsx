@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// Use BASE_URL so images load correctly on Vercel (and any subpath deployments)
+const img = (path) => `${import.meta.env.BASE_URL}${path.startsWith("/") ? path.slice(1) : path}`;
+
 const App = () => {
   const [navOpen, setNavOpen] = useState(false);
 
@@ -71,7 +74,7 @@ const App = () => {
           <div className="col-lg-6">
             <div className="hero-card-wrapper">
               <img
-                src="/images/Frame 114.png"
+                src={img("images/Frame 114.png")}
                 alt="Banking dashboard on laptop"
                 className="img-fluid hero-main-image"
               />
@@ -85,7 +88,7 @@ const App = () => {
       {/* Trusted by strip (Frame 75) */}
       <section className="trusted-strip container-xxl">
         <img
-          src="/images/Frame 75.png"
+          src={img("images/Frame 75.png")}
           alt="Trusted by client logos"
           className="trusted-strip-image"
         />
@@ -108,7 +111,7 @@ const App = () => {
             <div className="solutions-grid">
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src="/images/Vector.png" alt="Core Banking logo" />
+                  <img src={img("images/Vector.png")} alt="Core Banking logo" />
                 </div>
                 <h3 className="solution-title">Core Banking CB7</h3>
                 <p className="solution-copy">
@@ -124,7 +127,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src="/images/Vector-2.png" alt="Open Banking logo" />
+                  <img src={img("images/Vector-2.png")} alt="Open Banking logo" />
                 </div>
                 <h3 className="solution-title">Open Banking</h3>
                 <p className="solution-copy">
@@ -138,7 +141,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src="/images/Vector-3.png" alt="Loan Management System logo" />
+                  <img src={img("images/Vector-3.png")} alt="Loan Management System logo" />
                 </div>
                 <h3 className="solution-title">Loan Management System</h3>
                 <p className="solution-copy">
@@ -153,7 +156,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src="/images/Vector-1.png" alt="Digital Banking logo" />
+                  <img src={img("images/Vector-1.png")} alt="Digital Banking logo" />
                 </div>
                 <h3 className="solution-title">Digital Banking N7</h3>
                 <p className="solution-copy">
@@ -167,7 +170,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src="/images/Vector-3.png" alt="Loan Origination System logo" />
+                  <img src={img("images/Vector-3.png")} alt="Loan Origination System logo" />
                 </div>
                 <h3 className="solution-title">Loan Origination System</h3>
                 <p className="solution-copy">
@@ -210,7 +213,7 @@ const App = () => {
           <div className="col-lg-6">
             <div className="core-image-wrap">
               <img
-                src="/images/Frame 90.png"
+                src={img("images/Frame 90.png")}
                 alt="Cloud-based core banking dashboard"
                 className="img-fluid core-banking-image"
               />
@@ -225,7 +228,7 @@ const App = () => {
           <div className="col-lg-6">
             <div className="core-benefits-image-wrap">
               <img
-                src="/images/Frame 99.png"
+                src={img("images/Frame 99.png")}
                 alt="Core banking dashboard on laptop"
                 className="img-fluid core-benefits-image"
               />
@@ -332,7 +335,7 @@ const App = () => {
 
     <div className="n7-digital-banking-phone">
       <img
-        src="/images/iPhone 13 pro.png"
+        src={img("images/iPhone 13 pro.png")}
         alt="Digital banking main app screen"
         className="n7-hero-phone"
       />
@@ -374,7 +377,7 @@ const App = () => {
       </div>
       <div className="n7-detail-image">
         <img
-          src="/images/iPhone 13 Pro-1.png"
+          src={img("images/iPhone 13 Pro-1.png")}
           alt="Analytics app screen"
           className="n7-detail-phone"
         />
@@ -385,7 +388,7 @@ const App = () => {
     <div className="n7-detail-row">
       <div className="n7-detail-image">
         <img
-          src="/images/iPhone 13 Pro-2.png"
+          src={img("images/iPhone 13 Pro-2.png")}
           alt="Profile settings app screen"
           className="n7-detail-phone"
         />
@@ -456,7 +459,7 @@ const App = () => {
             <article className="insight-card insight-card-large">
               <div className="insight-card-media">
                 <img
-                  src="/images/frame 54.png"
+                  src={img("images/frame 54.png")}
                   alt="Insight logo grid"
                 />
               </div>
@@ -513,7 +516,7 @@ const App = () => {
         <div className="container-xxl case-studies-slider">
           <div className="case-card case-card-main">
             <div className="case-card-media">
-              <img src="/images/frame 54.png" alt="Client brand grid" />
+              <img src={img("images/frame 54.png")} alt="Client brand grid" />
             </div>
             <div className="case-card-content">
               <p className="case-kicker">Getting started</p>
