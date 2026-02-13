@@ -40,17 +40,17 @@ const App = () => {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4 align-items-lg-center">
               <li className="nav-item">
-                <a className="nav-link" href="#solutions">
+                <a className="nav-link" href="#">
                   Solutions <span className="nav-chevron">▾</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#features">
+                <a className="nav-link" href="#">
                   Resources <span className="nav-chevron">▾</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#mobile">
+                <a className="nav-link" href="#">
                   About us
                 </a>
               </li>
