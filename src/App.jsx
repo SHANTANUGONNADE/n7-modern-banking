@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 
-// Use BASE_URL so images load correctly on Vercel (and any subpath deployments)
-const img = (path) => `${import.meta.env.BASE_URL}${path.startsWith("/") ? path.slice(1) : path}`;
+import imgFrame114 from "./assets/images/Frame 114.png";
+import imgFrame75 from "./assets/images/Frame 75.png";
+import imgFrame90 from "./assets/images/Frame 90.png";
+import imgFrame99 from "./assets/images/Frame 99.png";
+import imgFrame54 from "./assets/images/Frame 54.png";
+import imgVector from "./assets/images/Vector.png";
+import imgVector1 from "./assets/images/Vector-1.png";
+import imgVector2 from "./assets/images/Vector-2.png";
+import imgVector3 from "./assets/images/Vector-3.png";
+import imgIphonePro from "./assets/images/iPhone 13 Pro.png";
+import imgIphonePro1 from "./assets/images/iPhone 13 Pro-1.png";
+import imgIphonePro2 from "./assets/images/iPhone 13 Pro-2.png";
 
 const App = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -74,7 +84,7 @@ const App = () => {
           <div className="col-lg-6">
             <div className="hero-card-wrapper">
               <img
-                src={img("images/Frame 114.png")}
+                src={imgFrame114}
                 alt="Banking dashboard on laptop"
                 className="img-fluid hero-main-image"
               />
@@ -88,7 +98,7 @@ const App = () => {
       {/* Trusted by strip (Frame 75) */}
       <section className="trusted-strip container-xxl">
         <img
-          src={img("images/Frame 75.png")}
+          src={imgFrame75}
           alt="Trusted by client logos"
           className="trusted-strip-image"
         />
@@ -111,7 +121,7 @@ const App = () => {
             <div className="solutions-grid">
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src={img("images/Vector.png")} alt="Core Banking logo" />
+                  <img src={imgVector} alt="Core Banking logo" />
                 </div>
                 <h3 className="solution-title">Core Banking CB7</h3>
                 <p className="solution-copy">
@@ -127,7 +137,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src={img("images/Vector-2.png")} alt="Open Banking logo" />
+                  <img src={imgVector2} alt="Open Banking logo" />
                 </div>
                 <h3 className="solution-title">Open Banking</h3>
                 <p className="solution-copy">
@@ -141,7 +151,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src={img("images/Vector-3.png")} alt="Loan Management System logo" />
+                  <img src={imgVector3} alt="Loan Management System logo" />
                 </div>
                 <h3 className="solution-title">Loan Management System</h3>
                 <p className="solution-copy">
@@ -156,7 +166,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src={img("images/Vector-1.png")} alt="Digital Banking logo" />
+                  <img src={imgVector1} alt="Digital Banking logo" />
                 </div>
                 <h3 className="solution-title">Digital Banking N7</h3>
                 <p className="solution-copy">
@@ -170,7 +180,7 @@ const App = () => {
 
               <article className="solution-card">
                 <div className="solution-icon">
-                  <img src={img("images/Vector-3.png")} alt="Loan Origination System logo" />
+                  <img src={imgVector3} alt="Loan Origination System logo" />
                 </div>
                 <h3 className="solution-title">Loan Origination System</h3>
                 <p className="solution-copy">
@@ -213,7 +223,7 @@ const App = () => {
           <div className="col-lg-6">
             <div className="core-image-wrap">
               <img
-                src={img("images/Frame 90.png")}
+                src={imgFrame90}
                 alt="Cloud-based core banking dashboard"
                 className="img-fluid core-banking-image"
               />
@@ -228,7 +238,7 @@ const App = () => {
           <div className="col-lg-6">
             <div className="core-benefits-image-wrap">
               <img
-                src={img("images/Frame 99.png")}
+                src={imgFrame99}
                 alt="Core banking dashboard on laptop"
                 className="img-fluid core-benefits-image"
               />
@@ -335,7 +345,7 @@ const App = () => {
 
     <div className="n7-digital-banking-phone">
       <img
-        src={img("images/iPhone 13 pro.png")}
+        src={imgIphonePro}
         alt="Digital banking main app screen"
         className="n7-hero-phone"
       />
@@ -377,7 +387,7 @@ const App = () => {
       </div>
       <div className="n7-detail-image">
         <img
-          src={img("images/iPhone 13 Pro-1.png")}
+          src={imgIphonePro1}
           alt="Analytics app screen"
           className="n7-detail-phone"
         />
@@ -388,7 +398,7 @@ const App = () => {
     <div className="n7-detail-row">
       <div className="n7-detail-image">
         <img
-          src={img("images/iPhone 13 Pro-2.png")}
+          src={imgIphonePro2}
           alt="Profile settings app screen"
           className="n7-detail-phone"
         />
@@ -459,7 +469,7 @@ const App = () => {
             <article className="insight-card insight-card-large">
               <div className="insight-card-media">
                 <img
-                  src={img("images/frame 54.png")}
+                  src={imgFrame54}
                   alt="Insight logo grid"
                 />
               </div>
@@ -516,7 +526,7 @@ const App = () => {
         <div className="container-xxl case-studies-slider">
           <div className="case-card case-card-main">
             <div className="case-card-media">
-              <img src={img("images/frame 54.png")} alt="Client brand grid" />
+              <img src={imgFrame54} alt="Client brand grid" />
             </div>
             <div className="case-card-content">
               <p className="case-kicker">Getting started</p>

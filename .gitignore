@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Build output (Vercel builds this on deploy)
+dist
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
